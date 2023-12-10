@@ -10,4 +10,5 @@ chown -R redmine:redmine files log tmp public/plugin_assets
 chmod -R 755 /opt/redmine
 exit
 echo "Ruby Configuration complete"
+echo "run now : bash -c \"$(wget -qLO - https://git.ayato-san.fr/shell-scripts/main/install/redmine-part-2.sh)\""
 exit

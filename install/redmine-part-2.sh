@@ -21,4 +21,5 @@ sed -i -e 's/username: root/username: redmineuser/' /opt/redmine/config/database
 sed -i -e 's/password: ""/password: "password"/' /opt/redmine/config/database.yml
 sed -i -e 's/transaction_isolation: "READ-COMMITTED"/tx_isolation: "READ-COMMITTED"/' /opt/redmine/config/database.yml
 echo "Update complete"
+echo "run now : bash -c \"$(wget -qLO - https://git.ayato-san.fr/shell-scripts/main/install/redmine-part-3.sh)\""
 exit

@@ -1,3 +1,6 @@
+#!/bin/sh
+set -e
+cd ~
 echo ""
 echo "Configuring Ruby..."
 cd /opt/redmine

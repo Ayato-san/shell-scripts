@@ -17,8 +17,8 @@ echo "Copy complete"
 
 echo ""
 echo "Updating database config..."
-sed -i -e 's/username: root/username: redmineuser/' database.yml
-sed -i -e 's/password: ""/password: "password"/' database.yml
-sed -i -e 's/transaction_isolation: "READ-COMMITTED"/tx_isolation: "READ-COMMITTED"/' database.yml
+sed -i -e 's/username: root/username: redmineuser/' /opt/redmine/config/database.yml
+sed -i -e 's/password: ""/password: "password"/' /opt/redmine/config/database.yml
+sed -i -e 's/transaction_isolation: "READ-COMMITTED"/tx_isolation: "READ-COMMITTED"/' /opt/redmine/config/database.yml
 echo "Update complete"
 exit

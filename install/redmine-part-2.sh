@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
+cd ~
 echo ""
 echo "Downloading Redmine v5.1.1..."
 wget --no-check-certificate https://www.redmine.org/releases/redmine-5.1.1.tar.gz

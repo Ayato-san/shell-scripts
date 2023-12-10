@@ -33,11 +33,10 @@ echo "Installation success"
 
 echo ""
 echo "Configuring mysql"
+echo "WRITE this :\"CREATE DATABASE redmine CHARACTER SET utf8mb4;\""
+echo "           :\"GRANT ALL PRIVILEGES ON redmine.* TO 'redmineuser'@'localhost' IDENTIFIED BY 'password';\""
+echo "           :\"FLUSH PRIVILEGES;\""
 mysql
-CREATE DATABASE redmine CHARACTER SET utf8mb4;
-GRANT ALL PRIVILEGES ON redmine.* TO 'redmineuser'@'localhost' IDENTIFIED BY 'password';
-FLUSH PRIVILEGES;
-EXIT;
 echo "Configuration Complete"
 
 echo ""

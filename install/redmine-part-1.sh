@@ -45,4 +45,5 @@ echo "Adding redmine user (LINUX)"
 /usr/sbin/usermod -aG www-data redmine
 
 echo "Switching to redmine user account"
+echo "run now : bash -c \"$(wget -qLO - https://git.ayato-san.fr/shell-scripts/main/install/redmine-part-2.sh)\""
 su - redmine

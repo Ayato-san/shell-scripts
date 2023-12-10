@@ -14,7 +14,7 @@ echo "  IP:           $IP"
 echo "  Domain name:  $DOMAIN_NAME"
 echo "--------------------------------------"
 
-if (whoami != root);  then
+if [ "$EUID" -ne 0 ];  then
   echo "Please run as root"
   exit
 fi

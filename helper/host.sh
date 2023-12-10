@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-if [ "$EUID" -ne 0]; then
+if [ "$EUID" -ne 0 ]; then
   echo "Please run as root"
   exit
 fi
@@ -14,5 +14,5 @@ sed -i -e "s/$old/$new/g" /etc/hosts
 echo "The old hostname was $old the new is $new"
 echo "The computer will reboot in 3 seconds..."
 
-sleep 2
-reboot
+sleep 3
+systemctl reboot
